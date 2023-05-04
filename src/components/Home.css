@@ -1,0 +1,7 @@
+.leftBar,.rightBar,.middleBar{
+    height: calc(100vh - 70px);
+}
+
+.homeBackground{
+    background-color: #f2f2f2;
+}

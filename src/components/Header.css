@@ -1,0 +1,10 @@
+.Navbar{
+    height: 70px;
+    background-color: #1976d2 !important;
+}
+.Navbar a{
+    color: white;
+}
+.navbar-brand{
+    font-size: 30px !important;
+}

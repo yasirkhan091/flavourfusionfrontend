@@ -1,0 +1,64 @@
+.share{
+    width: 95%;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 20px;
+    background-color: white;
+    box-shadow: 0px 0px 12px -5px black;
+}
+.profileInShare{
+    display: flex;
+    align-items: center;
+    margin: 0 20px 20px 20px;
+}
+
+.profileInShare img{
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.profileInShare span{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.share input{
+    border: none;
+    font-size: 1.75rem;
+    font-weight: 500;
+    width: 90%;
+    margin: 2px 5%;
+
+}
+.share input:focus{
+   outline: none;
+}
+.share hr{
+    width: 90%;
+    margin: 10px auto;
+}
+.shareIconsWrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ShareIcons{
+   margin-left: auto !important;
+   margin-right: auto !important;
+   display: flex;
+   align-items: center; 
+}
+.sharePhotos,.shareEmotions,.shareLocation{
+    font-size: 50px !important;
+}
+.sharePhotos{
+    color: rgb(188, 93, 188);
+}
+.shareEmotions{
+    color: gold;
+}
+.shareLocation{
+    color:rgb(214, 34, 34);
+}
