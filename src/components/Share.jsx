@@ -8,13 +8,17 @@ import { Button } from '@mui/material';
 export default function Share() {
     return (
         <>
-            <div className="share">
-                <div className="profileInShare">
+            <div className="share ">
+                <div className="profileInShare ">
+                    <div className="shareImageWrapper">
                     <img src="/images/Profile1.jpg" alt="profilePiture" />
-                    <span>Yasir Khan</span> 
+                    </div>
+                    {/* <span>Yasir Khan</span>  */}
+                    <div className="shareTextWrapper">
+                    <input type="text" className="shareText" placeholder="Type Something here..." />
+                    <hr />
+                    </div>
                 </div>
-                <input type="text" className="shareText" placeholder="Share your thoughts and emotions here" />
-                <hr />
                 <div className="shareIconsWrapper">
                 <div className="ShareIcons ">
                     <AddPhotoAlternateIcon className='sharePhotos'/>Photos/Videos

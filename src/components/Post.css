@@ -1,0 +1,51 @@
+.postContainer{
+    width: 95%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding:20px;
+    margin-bottom: 30px;
+}
+.postProfileImageAndName{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 500;
+}
+.postProfileImageAndName img{
+    
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+.postContainer>img{
+    height: 400px;
+    width: 100%;
+    margin: 20px 0px;
+    object-fit: cover;
+}
+.likeIcons{
+    display: flex;
+    align-items: center;
+}
+.likeButton,.commentButton,.shareButton{
+    font-size: 30px;
+    margin: 0px 7px;
+}
+.likeButton{
+    color: red;
+}
+.commentButton{
+    color:black;
+}
+.shareButton{
+    color: black;
+}
+.noOfLikes{
+    font-weight: 300;
+    font-size: 15px;
+    margin-left: 11px;
+}
+.timeago{
+    font-size: 0.9rem;
+}

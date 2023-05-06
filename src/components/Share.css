@@ -16,9 +16,14 @@
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
-    margin-right: 20px;
+    margin: auto;
 }
-
+.shareImageWrapper{
+    flex:0.5;
+}
+.shareTextWrapper{
+    flex:5.5;
+}
 .profileInShare span{
     font-size: 1.2rem;
     font-weight: 500;
@@ -26,7 +31,7 @@
 
 .share input{
     border: none;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 500;
     width: 90%;
     margin: 2px 5%;
@@ -37,7 +42,7 @@
 }
 .share hr{
     width: 90%;
-    margin: 10px auto;
+    margin: 6px auto;
 }
 .shareIconsWrapper{
     display: flex;
@@ -51,7 +56,7 @@
    align-items: center; 
 }
 .sharePhotos,.shareEmotions,.shareLocation{
-    font-size: 50px !important;
+    font-size: 45px !important;
 }
 .sharePhotos{
     color: rgb(188, 93, 188);

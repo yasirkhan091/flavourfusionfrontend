@@ -17,7 +17,7 @@ export default function Home() {
               <div className="col-10 col-md-5 mx-auto middleBar">
                   <MiddleBar/>
               </div>
-              <div className="col-10 col-md-4 mx-auto rightBar">
+              <div className="col-10 col-md-4 mx-auto d-flex flex-column align-items-center rightBar">
                   <RightBar/>
               </div>
           </div>
