@@ -17,13 +17,14 @@ const SuggestedProfile=()=>{
 export default function RightBar() {
   return (
     <>
-        <div className="friendsSuggestion ">
+        <div className="friendsSuggestion pb-2">
           <h4 className='mb-3'>Friend Suggestion</h4>
           <SuggestedProfile/>
           <SuggestedProfile/>
           <SuggestedProfile/>
           <SuggestedProfile/>
           <SuggestedProfile/>
+          <hr className='mb-2'/>
           <a href="/" className='seeMoreLink d-block text-center'>See more</a>
         </div>
     </>

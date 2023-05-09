@@ -1,0 +1,53 @@
+.mainContainerDetailedRecipe{
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+
+.detailedRecipe{
+    height: 80vh;
+    z-index: 450;
+   
+}
+.mainContainerDetailedRecipe::before{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    background-color: #cfcfcf;
+    opacity: 0.6;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right:0;
+}
+.detailedRecipeImage{
+    object-fit: cover;
+}
+.detailedRecipeImageAndContent{
+    height: 80vh;
+    overflow-y: scroll;
+    z-index: 555;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+}
+.closeButtonDetailedRecipe{
+    font-size: 1rem;
+    cursor: pointer;
+    top:-53px;
+    right: 0;
+}
+::-webkit-scrollbar{
+    width: 6.5px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 2px;
+  }
+

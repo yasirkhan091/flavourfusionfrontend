@@ -1,0 +1,17 @@
+.recipeImage{
+    height:184px;
+    
+    object-fit: cover;
+}
+.card-text{
+    font-size: 0.8rem;
+}
+.recipeButton{
+    width: 80%;
+}
+.bookMarkIcon{
+    top:9px;
+    right: 39px;
+    font-size: 1.5rem;
+    z-index: 5;
+}

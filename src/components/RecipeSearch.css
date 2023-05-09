@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+
+       body{
+        background-color:#f2f2f2;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+       }
+
+       .height{
+        height: calc(100vh - 70px);
+       }
+       
+       .ingredientInputListWrapper{
+              width: 35%;
+              box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+              border-radius: 20px;
+
+       }
+       .listOfAddedIngredients{
+              border:1px solid black;
+       }
+
+       .bottomOfAddedIngredients> button{
+              background-color: blue;
+       }

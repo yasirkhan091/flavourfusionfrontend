@@ -27,15 +27,19 @@ export default function Header() {
                   <a className="nav-link" href="/"> <ChecklistIcon /> </a>
                 </Tooltip>
               </li>
-              <li className="nav-item">
+              <li className="nav-item ">
                 <Tooltip title='Chats'>
-                  <a className="nav-link" href="/"><ChatIcon /></a>
+                  <a className="nav-link position-relative" href="/"><ChatIcon />
+                  <span className="position-absolute bg-danger text-center rounded-circle messageCountOnChatIcon">1</span>
+                  </a>
                 </Tooltip>
               </li>
 
               <li className="nav-item">
                 <Tooltip title='Notifications'>
-                  <a className="nav-link" href="/"><NotificationsIcon /></a>
+                  <a className="nav-link position-relative" href="/"><NotificationsIcon />
+                  <span className="position-absolute bg-danger text-center rounded-circle notifcationCountOnNotificationIcon">1</span>
+                  </a>
                 </Tooltip>
               </li>
               <li className="nav-item">

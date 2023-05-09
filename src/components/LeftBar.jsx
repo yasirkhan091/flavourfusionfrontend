@@ -25,7 +25,7 @@ export default function LeftBar() {
         <p>4</p>
         </div>
         </div>
-        <hr />
+        <hr className='mb-2'/>
         <a href="/" className='seeMoreLink'>See more</a>
       </div>
 
