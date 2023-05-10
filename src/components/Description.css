@@ -1,0 +1,69 @@
+.coverPictureInDescription{
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.ProfilePicture{
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px auto;
+    position: absolute;
+    bottom: -50px;
+    left: calc(50% - 45px);
+    border: 2px solid white;
+}
+.profileImageAndName{
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.Description{
+    text-align: center;
+    margin: 20px 20px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 20px;
+    /* box-shadow: 0px 0px 9px -3px rgba(0,0,0,1); */
+}
+.Description>span{
+    font-size: 17px;
+    font-weight: 700;
+}
+.countBoxWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.countBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-right: 1px solid grey;
+    flex:1
+}
+.lastBox{
+    border:none;
+}
+.seeMoreLink{
+    text-decoration: none;
+    color:#1976d2;
+    /* #41d662 */
+}
+
+.DescriptionProfile{
+    width: 94%;
+}
+.coverPictureInDescriptionProfile{
+    height:228px !important ;
+}
+.ProfilePictureInProfilePage{
+    height: 122px !important;
+    left: calc(50% - 61px) !important;
+}
+.profileImageAndNameInProfilePage{
+    margin-bottom: 44px;
+}

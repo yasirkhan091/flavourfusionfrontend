@@ -2,10 +2,11 @@ import React from 'react'
 import Share from './Share'
 import './MiddleBar.css'
 import Post from './Post'
-export default function MiddleBar() {
+import Description from './Description'
+export default function MiddleBar(props) {
   return (
     <>
-      <Share/>
+      {props.Profile?<Description Profile/>:<Share/>}
       <Post/>
       <Post />
       <Post />

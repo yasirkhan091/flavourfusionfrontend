@@ -4,6 +4,8 @@ import ChatIcon from '@mui/icons-material/Chat';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import Tooltip from '@mui/material/Tooltip';
 import SearchIcon from '@mui/icons-material/Search';
+import LogoutIcon from '@mui/icons-material/Logout';
+// import FastfoodIcon from '@mui/icons-material/Fastfood';
 import './Header.css';
 
 export default function Header() {
@@ -11,7 +13,7 @@ export default function Header() {
     <>
       <nav className="navbar navbar-expand-lg navbar-light Navbar">
         <div className="container-fluid">
-          <a className="navbar-brand ms-5" href="/">FlavourFusion</a>
+          <a className="navbar-brand ms-5 fw-bold " href="/">FlavourFusion</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -21,7 +23,9 @@ export default function Header() {
               <li className="nav-item">
                 <a className="nav-link" aria-current="page" href="/"><SearchIcon />Recipe Search</a>
               </li>
-
+              <li className="nav-item">
+                <a className="nav-link" href="/">Shopping List</a>
+              </li>
               <li className="nav-item">
                 <Tooltip title='Saved Recipes'>
                   <a className="nav-link" href="/"> <ChecklistIcon /> </a>
@@ -42,11 +46,9 @@ export default function Header() {
                   </a>
                 </Tooltip>
               </li>
+              
               <li className="nav-item">
-                <a className="nav-link" href="/">Shopping List</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">Logout</a>
+                <a className="nav-link" href="/">Logout <LogoutIcon/></a>
               </li>
             </ul>
           </div>

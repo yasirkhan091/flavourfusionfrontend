@@ -8,7 +8,7 @@ import BookmarkAddIcon from '@mui/icons-material/BookmarkAdd';
 import DetailedRecipe from './DetailedRecipe';
 export default function RecipeCard(props) {
     const [showDetailedRecipe,changeStateOfDetailedRecipe]=useState(false);
-    
+    console.log(window.pageYOffset);
     return (
         <>
             <div className="col-md-3 col-10 mx-auto position-relative">
@@ -31,7 +31,7 @@ export default function RecipeCard(props) {
                     </div>
                 </div>
             </div>
-            {showDetailedRecipe?<DetailedRecipe removeDetailedRecipe={changeStateOfDetailedRecipe} />:""}
+            {showDetailedRecipe?<DetailedRecipe offset={window.pageYOffset} removeDetailedRecipe={changeStateOfDetailedRecipe} />:""}
         </>
     )
 }

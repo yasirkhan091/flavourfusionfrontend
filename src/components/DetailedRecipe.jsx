@@ -4,9 +4,10 @@ import './DetailedRecipe.css'
 import CloseIcon from '@mui/icons-material/Close';
 
 export default function DetailedRecipe(props) {
+
     return (
         <>
-            <div className="position-absolute top-0 start-0 end-0 bottom-0 m-0 p-0">
+            <div className="position-absolute  start-0 end-0 bottom-0 m-0 p-0" style={{top:props.offset}}>
 
 
                 <div className="mainContainerDetailedRecipe d-flex align-item-center justify-content-center">
