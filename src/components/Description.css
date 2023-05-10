@@ -7,6 +7,7 @@
 }
 .ProfilePicture{
     height: 90px;
+    width: 90px;
     border-radius: 50%;
     text-align: center;
     margin: 10px auto;
@@ -14,6 +15,7 @@
     bottom: -50px;
     left: calc(50% - 45px);
     border: 2px solid white;
+    object-fit: contain;
 }
 .profileImageAndName{
     margin-bottom: 35px;
@@ -62,7 +64,9 @@
 }
 .ProfilePictureInProfilePage{
     height: 122px !important;
+    width: 122px !important;
     left: calc(50% - 61px) !important;
+    border: 4px solid white !important;
 }
 .profileImageAndNameInProfilePage{
     margin-bottom: 44px;

@@ -8,7 +8,7 @@ export default function Post() {
     <>
         <div className="postContainer">
             <div className="postProfileImageAndName">
-            <img src="/images/Profile1.jpg" alt="Profile Pic" />
+            <img src="/images/Profile2.jpg" alt="Profile Pic" />
             <div className="d-flex flex-column">
             Yasir Khan
             <span className='fw-lighter timeago'>5 min ago</span>

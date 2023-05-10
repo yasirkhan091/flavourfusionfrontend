@@ -11,7 +11,7 @@ export default function Share() {
             <div className="share ">
                 <div className="profileInShare ">
                     <div className="shareImageWrapper">
-                    <img src="/images/Profile1.jpg" alt="profilePiture" />
+                    <img src="/images/Profile2.jpg" alt="profilePiture" />
                     </div>
                     {/* <span>Yasir Khan</span>  */}
                     <div className="shareTextWrapper">

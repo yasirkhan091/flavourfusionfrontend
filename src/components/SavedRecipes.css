@@ -1,0 +1,35 @@
+.savedRecipeContainer{
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding:17px;
+    padding-top: 20px;
+}
+
+.savedRecipeCardImage{
+    height: 140px;
+    width: 100%;
+    object-fit: cover !important;
+    border-radius: 7px;
+}
+
+.savedRecipeNameBackground{
+    border-radius: 7px;
+    top:0;
+    left:12px;
+    right: 8px;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.4;
+    cursor: pointer;
+}
+.savedRecipeName{
+    border-radius: 7px;
+    color:white;
+    top:0;
+    left:17px;
+    right: 8px;
+    bottom: 0;
+    z-index: 300;
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+.adImageWrapper{
+    width: 71%;
+    margin:20px;
+    margin-bottom: 0;
+}
+.adImageWrapper  img{
+    height: 211px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}

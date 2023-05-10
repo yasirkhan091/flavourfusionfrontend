@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Description.css'
 
 export default function Description(props) {
@@ -6,8 +7,8 @@ export default function Description(props) {
     <>
         <div className={props.Profile?'Description DescriptionProfile':'Description'}>
         <div className={props.Profile?"profileImageAndName profileImageAndNameInProfilePage":"profileImageAndName"}>
-          <img src="/images/Cover2.jpg" alt="CoverPic " className={props.Profile?'coverPictureInDescription coverPictureInDescriptionProfile':'coverPictureInDescription'}/>
-          <img src="/images/Profile1.jpg" alt="ProfilePic" className={props.Profile?"ProfilePicture ProfilePictureInProfilePage":"ProfilePicture"} />
+          <img src="/images/Cover4.jpg" alt="CoverPic " className={props.Profile?'coverPictureInDescription coverPictureInDescriptionProfile':'coverPictureInDescription'}/>
+          <img src="/images/Profile2.jpg" alt="ProfilePic" className={props.Profile?"ProfilePicture ProfilePictureInProfilePage":"ProfilePicture"} />
         </div>
           <span className="Name">Yasir Khan</span>
         <p>Hey I am a Software developer. It's nice to meet you</p>
@@ -27,7 +28,7 @@ export default function Description(props) {
         </div>
         </div>
         <hr className='mb-2'/>
-        {props.Profile?"":<a href="/" className='seeMoreLink'>See more</a>}     
+        {props.Profile?"":<Link to="/profile" className='seeMoreLink'>See more</Link>}     
       </div>
 
     </>

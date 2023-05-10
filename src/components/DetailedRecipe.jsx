@@ -16,10 +16,10 @@ export default function DetailedRecipe(props) {
                             <div className="col-10 col-md-8 mx-auto">
                                 <div className="detailedRecipeImageAndContent row align-items-center p-3">
                                     <div className="detailedRecipeImage col-md-4 col-12 mb-3">
-                                        <img src="/images/Dish1.png" className=' w-100 rounded-circle' alt="Dish" />
+                                        <img src="/images/Dish2.jpg" className=' w-100 rounded-circle detailedRecipeImageHeight' alt="Dish" />
                                     </div>
                                     <div className="detailedRecipeContents position-relative col-md-8 col-12">
-                                        <h3>Banana Shake</h3>
+                                        <h3>Dish Name</h3>
                                         <p><span>Preperation Time:</span> 20 mins</p>
                                         <p><span>Serves: 1</span></p>
                                         <p><span>Summary: This is a very good banana shake</span> </p>

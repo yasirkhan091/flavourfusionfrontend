@@ -40,6 +40,10 @@
     top:-53px;
     right: 0;
 }
+.detailedRecipeImageHeight{
+    height: 250px;
+    object-fit: cover;
+}
 ::-webkit-scrollbar{
     width: 6.5px;
 }

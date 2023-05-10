@@ -6,7 +6,7 @@ const SuggestedProfile=(props)=>{
     return (
       <>
         <div className="suggestedProfile d-flex align-items-center mb-3">
-          <img src="/images/Profile1.jpg" className='rounded-circle me-3' alt="SuggestedProfile" />
+          <img src="/images/Profile2.jpg" className='rounded-circle me-3' alt="SuggestedProfile" />
           <span className='me-auto'>Yasir Khan</span> 
           {props.Profile?"":<PersonAddAlt1Icon className='personAddIcon rounded'/>}
         </div>
