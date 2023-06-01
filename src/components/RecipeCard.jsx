@@ -10,10 +10,9 @@ export default function RecipeCard(props) {
     const [showDetailedRecipe,changeStateOfDetailedRecipe]=useState(false);
     return (
         <>
-            <div className="col-md-3 col-10 mx-auto position-relative">
+            <div className="col-md-3 col-10 mx-auto  ">  
+                <div className="card recipeCard position-relative" style={{maxWidth:"18rem"}}>
                 <BookmarkAddIcon className="position-absolute bookMarkIcon"/>
-                <div className="card" style={{maxWidth:"18rem"}}>
-                    
                     <img src={props.src} className="card-img-top recipeImage" alt="RecipeImage" />
                     <div className="card-body">
                         <h5 className="card-title">Dish Name</h5>

@@ -10,7 +10,7 @@ export default function LeftBar(props) {
       {props.Profile?<Info/>:<Description/>}
       {props.Profile ? <ListOfAccounts Profile/> :"" }
       {/* <ListOfAccounts Profile/> */}
-      <SideOptions/>
+      {props.Profile ? "" :<SideOptions/>}
     </>
   )
 }

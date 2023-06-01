@@ -2,7 +2,7 @@
 .Navbar{
     height: 70px;
     background-color: #fff !important;
-    /* box-shadow: 0px 0px 9px -3px rgba(0,0,0,1); */
+    box-shadow: 0px 0px 9px -3px rgba(0,0,0,0.2);
 }
 .nav-Link{
     color:#000!important;
