@@ -5,9 +5,10 @@
     padding:20px;
     margin-bottom: 30px;
     transition: 0.2s ease-in;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
 }
 .postContainer:hover{
-    box-shadow: 0px 0px 13px -3px rgba(0,0,0,0.8);
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
 }
 .postProfileImageAndName{
     display: flex;
@@ -16,7 +17,6 @@
     font-weight: 500;
 }
 .postProfileImageAndName img{
-    
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -29,6 +29,12 @@
     margin: 20px 0px;
     object-fit: cover;
 }
+
+.descriptionTextInPost{
+    font-weight: 400;
+    font-size: 1.08rem;
+}
+
 .likeIcons{
     display: flex;
     align-items: center;

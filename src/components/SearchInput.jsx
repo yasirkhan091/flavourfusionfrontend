@@ -4,22 +4,22 @@ import './SearchInput.css'
 export default function SearchInput(props) {
   return (
     <>
-        <div class="container">
+      <div className="container">
 
-<div class="row d-flex justify-content-center mt-3">
+        <div className="row d-flex justify-content-center mt-3">
 
-  <div class="col-md-6">
+          <div className="col-md-6">
 
-    <div class="search">
-      <i class="fa fa-search"></i>
-      <input type="text" class="form-control" placeholder={props.placeholder} />
-      <button class="btn btn-primary">{props.buttonName}</button>
-    </div>
+            <div className="search">
+              <i className="fa fa-search"></i>
+              <input type="text" className="form-control" placeholder={props.placeholder} ref={props.input}/>
+              <button className="btn btn-primary" onClick={()=>{props.setOffset(0);props.searchFunction();}}>{props.buttonName}</button>
+            </div>
 
-  </div>
+          </div>
 
-</div>
-</div>
+        </div>
+      </div>
     </>
   )
 }

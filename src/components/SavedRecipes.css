@@ -2,9 +2,23 @@
     background-color: white;
     border-radius: 20px;
     margin-top: 20px;
-    padding:17px;
-    padding-top: 20px;
+    padding:20px 20px !important;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
 }
+
+.friendsContainer{
+    width:90% !important;
+}
+.friendNameInFriendSuggestion{
+    font-weight: 500;
+}
+.friendImageInFriendSuggestion{
+    height: 131px !important;
+}
+.loadingInFriendsSuggestion{
+    height: 320px;
+}
+
 
 .savedRecipeCardImage{
     height: 140px;
