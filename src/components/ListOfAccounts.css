@@ -18,9 +18,7 @@
     box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
     transition: 0.2s ease-in;
 }
-.friendsSuggestion:hover{
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
-}
+
 .personAddIcon{
     background-color: #e9ffff;
     color: #1976d2;

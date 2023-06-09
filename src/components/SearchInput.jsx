@@ -13,7 +13,7 @@ export default function SearchInput(props) {
             <div className="search">
               <i className="fa fa-search"></i>
               <input type="text" className="form-control" placeholder={props.placeholder} ref={props.input}/>
-              <button className="btn btn-primary" onClick={()=>{props.setOffset(0);props.searchFunction();}}>{props.buttonName}</button>
+              <button className="btn btn-primary" onClick={()=>{props.setOffset && props.setOffset(0);props.searchFunction();}}>{props.buttonName}</button>
             </div>
 
           </div>

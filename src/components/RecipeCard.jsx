@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import "./RecipeCard.css"
 // import CheckBoxIcon from '@mui/icons-material/CheckBox';
 // import IndeterminateCheckBoxIcon from '@mui/icons-material/IndeterminateCheckBox';
@@ -9,21 +9,52 @@ import PeopleIcon from '@mui/icons-material/People';
 import BookmarkAddIcon from '@mui/icons-material/BookmarkAdd';
 import DetailedRecipe from './DetailedRecipe';
 import axios from 'axios';
+import Context from '../context/contextapi';
+import BookmarkRemoveIcon from '@mui/icons-material/BookmarkRemove';
 
 export default function RecipeCard(props) {
+    const contextData=useContext(Context);
     const [showDetailedRecipe,changeStateOfDetailedRecipe]=useState(false);
     const [recipeDetails,setRecipeDetails]=useState({});
+    const [saved,setSaved]=useState(false);
+
+    useEffect(()=>{
+        setSaved(props.saved);
+    },[props.saved])
+    console.log(props.saved)
+    const saveARecipe=async()=>{
+        const result= await axios.patch(`/user/saveRecipe/${contextData.user.userID}`,{recipeId:props.id,name:props.title,imgsrc:props.image});
+        if(result.status===200){
+            setSaved(true);
+        }else{
+            alert('Error saving the recipe');
+        }
+        
+    }
+
+    const unsaveARecipe= async()=>{
+        const result = await axios.patch(`/user/unsaveRecipe/${contextData.user.userID}`,{recipeId:props.id})
+        if(result.status===200)
+        {
+            setSaved(false);
+        }else{
+            alert('Error unsaving the recipe');
+        }
+        
+    }
+
     const showDetailedRecipeByIngredients=async ()=>{
         document.body.style.overflow='hidden'; 
         const result= await axios.get(`https://api.spoonacular.com/recipes/${props.id}/information/?apiKey=${process.env.REACT_APP_API_KEY}`);
         setRecipeDetails(result.data);
         changeStateOfDetailedRecipe(true);
     }
+
     return (
         <>
             <div className="col-md-3 col-10 mx-auto  ">  
                 <div className="card recipeCard position-relative" style={{maxWidth:"18rem"}}>
-                <BookmarkAddIcon className="position-absolute bookMarkIcon"/>
+                {saved?<BookmarkRemoveIcon className="position-absolute bookMarkIcon" onClick={unsaveARecipe}/>:<BookmarkAddIcon className="position-absolute bookMarkIcon" onClick={saveARecipe}/>}
                     <img src={props.image} className="card-img-top recipeImage" alt="RecipeImage" />
                     <div className="card-body">
                         <h5 className="card-title">{props.title}</h5>
