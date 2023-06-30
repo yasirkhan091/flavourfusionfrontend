@@ -9,24 +9,24 @@ export default function SideOptions() {
   return (
     <>
         
-        <div className="sideOptionsWrapper mx-auto">
+        <div className="sideOptionsWrapper box-shadow mx-auto">
             <h4 className='mb-2'>Recipe Options</h4>
-            <div className="sideOptionsBox ">
+            <div className="sideOptionsBox">
             <Link to='/recipeSearch' className='text-decoration-none text-dark'>
-                <SearchIcon className='me-2 fs-3'/>Recipe Search
+                <SearchIcon  style={{color:"#4ff57b"}} className='fs-3 sideOptionsIcons'/>Recipe Search
             </Link>
             </div>
-            <hr className='w-100 mt-2 mb-2'/>
+            {/* <hr className='w-100 mt-2 mb-2'/> */}
             <div className="sideOptionsBox">
-                <FormatListBulletedIcon className='me-2 fs-3 '/>Saved Recipes
+                <FormatListBulletedIcon  style={{color:"#f8de00"}} className='fs-3 sideOptionsIcons '/>Saved Recipes
             </div>
-            <hr className='w-100 mt-2 mb-2'/>
+            {/* <hr className='w-100 mt-2 mb-2'/> */}
             <div className="sideOptionsBox">
-                <ChecklistIcon className='me-2 fs-3 '/>Shopping List
+                <ChecklistIcon  style={{color:"#8abaff"}} className='fs-3 sideOptionsIcons '/>Shopping List
             </div>
-            <hr className='w-100 mt-2 mb-2'/>
+            {/* <hr className='w-100 mt-2 mb-2'/> */}
             <div className="sideOptionsBox">
-                <DownloadIcon className='me-2 fs-3 '/>Download List
+                <DownloadIcon style={{color:"#e97efd"}} className='fs-3 sideOptionsIcons '/>Download List
             </div>
         </div>
     </>

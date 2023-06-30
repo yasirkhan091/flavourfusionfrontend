@@ -5,11 +5,9 @@
     padding:20px;
     margin-bottom: 30px;
     transition: 0.2s ease-in;
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+
 }
-.postContainer:hover{
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
-}
+
 .postProfileImageAndName{
     display: flex;
     align-items: center;
@@ -40,8 +38,9 @@
     align-items: center;
 }
 .likeButton,.commentButton,.shareButton{
-    font-size: 30px;
+    font-size: 1.85rem !important;
     margin: 0px 7px;
+    cursor: pointer;
 }
 .likeButton{
     color: red;

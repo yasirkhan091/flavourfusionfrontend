@@ -8,7 +8,7 @@ export default function LeftBar(props) {
   return (
     <>
       {props.Profile?<Info/>:<Description/>}
-      {props.Profile ? <ListOfAccounts Profile/> :<SideOptions/>}
+      {props.Profile ? <ListOfAccounts Profile {...props}/> :<SideOptions/>}
       {/* <ListOfAccounts Profile/> */}
     </>
   )

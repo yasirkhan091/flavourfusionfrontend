@@ -50,7 +50,7 @@ export default function Share() {
 
     return (
         <>
-            <div className="share ">
+            <div className="share box-shadow">
                 <div className="profileInShare ">
                     <div className="shareImageWrapper">
                         <img src={userData.profileImagescr ? userData.profileImagescr : "/images/NoProfile.png"} alt="profilePiture" />
@@ -89,7 +89,7 @@ export default function Share() {
                         <LocationOnIcon className='shareLocation' /><span className=' d-none  d-lg-block'>Location</span>
                     </div>
                     <label htmlFor="submitButtonInShare">
-                        <Button variant="contained" className='mx-auto' onClick={uploadThePost} disabled={imgInPost?'':'true'}>Post</Button>
+                        <Button variant="contained" className='mx-auto' onClick={imgInPost?uploadThePost:()=>{}}>Post</Button>
                     </label>
                 </div>
             </div>

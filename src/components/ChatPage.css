@@ -1,0 +1,85 @@
+.chatOuterContainer{
+    height: 100vh;
+    background-color: #a7bcff;
+}
+.chatInnerContainer{
+    /* width: 53%; */
+    height: 88%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+
+/* Left section */
+.chatLeftSection{
+    flex:1;
+    height: 100%;
+    background-color: #3e3c61;
+}
+.chatProfileImageInHeading{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.chatLeftHeading{
+    background-color: #2f2d52;
+    height: 12%;
+    padding: 3%;
+}
+.chatLogo{
+    font-size: 1rem;
+}
+.chatUsernameInHeading{
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: white;
+}
+.chatSearchBar{
+    height: 10%;
+}
+.chatSeachBarInput{
+    background-color: transparent;
+    border: none;
+    font-size: 0.9rem;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+.chatSeachBarInput:focus{
+    outline:none;
+}
+
+/* Conversations In Left Section */
+
+.chatListOfConversations{
+    overflow-y: auto;
+    height: 77%;
+}
+.conversationsInLeftSection{
+    height: 14%;
+    padding: 12px;
+    color:white;
+}
+.conversationsInLeftSection>img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nameInConversation{
+    font-weight: normal;
+    font-size: 0.97rem;
+}
+.lastMessageInConversation{
+    font-weight: lighter;
+    font-size: 0.7rem;
+    color: #c4c1dc;
+
+}
+.activeConversation{
+    background-color: #2f2d52;
+}
+

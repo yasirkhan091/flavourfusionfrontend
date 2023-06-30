@@ -1,0 +1,106 @@
+.chatRightSection{
+    flex:2;
+    height: 100%;
+    background-color: #ddddf7;
+    
+}
+
+.chatHeadingOfRightSection{
+    height: 10%;
+    background-color: #5d5b8d;
+    color:#ddddf6;
+    
+    padding: 10px;
+}
+.chatIconsInRightSectionHeading{
+    font-size: 1.3rem !important;
+    color:#ddddf6 !important;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.chatBodyContainingMessagesInRightSection{
+    height: 80%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+/* Chat Messages */
+.messageContainer{
+    display: flex;
+    align-items: center;
+}
+.userMessage{
+    flex-direction: row-reverse;
+}
+.imageInMessage{
+    display: flex;
+    flex-direction: column;
+}
+.imageInMessage> img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin:5px 0;
+}
+.messageRecievedByUser{
+    min-height: 35px;
+    max-height: fit-content;
+    max-width: 40%;
+    padding: 10px;
+    border-radius: 0 10px 10px 10px;
+    background-color: white;
+    color: black;
+}
+.timeAgoOfMessage{
+    font-size: 0.6rem;
+    color:grey;
+}
+.messageSentByUser{
+    min-height: 35px;
+    max-height: fit-content;
+    max-width: 40%;
+    padding: 10px;
+    border-radius: 10px 0px 10px 10px;
+    background-color: #83a0fe;
+    color: white;   
+}
+
+/* Chat Message Input  */
+
+.chatMessageInputContainer{
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    padding:0px 10px;
+}
+
+.chatMessageInput{
+    background-color: transparent;
+    border: none;
+    font-size: 1.1rem;
+    padding: 10px;
+    height: 100%;
+    width: 57%;
+    color: black;
+}
+.chatMessageInput:focus{
+    outline: none;
+}
+.chatMessageIcons{
+    color:#d6d6d6 !important;
+    font-size: 1.8rem !important;
+    margin: 5px;
+    cursor: pointer;
+}
+.chatMessageSendButton{
+    background-color: #83a0fe;
+    color: white;
+    font-size: 0.7rem !important;
+    width: 38px !important;
+}
+.chatMessageSendButton:hover{
+    background-color: #748dde;
+}
+

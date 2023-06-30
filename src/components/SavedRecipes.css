@@ -1,18 +1,20 @@
 .savedRecipeContainer{
-    height: 556px;
+    height: 533px;
     background-color: white;
     border-radius: 20px;
     margin-top: 20px;
     padding:20px 20px !important;
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
-    overflow: scroll;
+    overflow-y: auto;
 }
 
 .friendsContainer{
     width:90% !important;
+    height:415px !important;
 }
 .friendNameInFriendSuggestion{
     font-weight: 500;
+    text-decoration: none !important;
+    color:black;
 }
 .friendImageInFriendSuggestion{
     height: 131px !important;
@@ -33,7 +35,7 @@
     border-radius: 7px;
     top:0;
     left:12px;
-    right: 8px;
+    right: 12px;
     bottom: 0;
     background-color: black;
     opacity: 0.4;

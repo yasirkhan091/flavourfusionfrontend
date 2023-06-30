@@ -12,9 +12,20 @@ import ProfilePage from './components/ProfilePage';
 import RecipeSearch from './components/RecipeSearch';
 import Login from './components/Login';
 import Loading from './components/Loading';
+import { ChatPage } from './components/ChatPage';
+import { io } from 'socket.io-client';
+const socket = io('http://192.168.1.55:5000',{
+  transports: ['websocket'],
+  reconnection: true,
+  rejectUnauthorized: false
+});
+socket.on("connect_error", (err) => {
+  console.log(`connect_error due to ${err.message}`);
+});
 
 function App() {
   const [user, dispatch] = useReducer(reducer, initialState);
+
   useEffect(()=>{
     const login=async () => {
     const tokenValue = await axios.get("/auth/whoami");
@@ -25,6 +36,7 @@ function App() {
           LoggedIn: true
         }
         await dispatch({ type: "LogIn", payload });
+        socket.emit('join',tokenValue.data.userID);
       }
       else
       {
@@ -33,7 +45,6 @@ function App() {
   }
   login();
 },[]);
-
   
   return (
     <>
@@ -42,10 +53,11 @@ function App() {
           <Routes>
             {user.LoggedIn && <>
               <Route path='/' element={<Home />} />
-              <Route path='/profile' element={<ProfilePage />} />
+              <Route path='/profile/:id' element={<ProfilePage />} />
               <Route path='/recipeSearch' element={<RecipeSearch />} />
               <Route path='/login' element={<Login />} />
               <Route path='/signup' element={<Login signup />} />
+              <Route path='/chat' element={<ChatPage socket={socket}/>}/>
             </>}
 
             {(!user.LoggedIn&&!user.LoggingIn) && <>

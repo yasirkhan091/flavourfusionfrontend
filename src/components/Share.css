@@ -4,13 +4,9 @@
     padding: 15px;
     margin: 20px 20px;
     background-color: white;
-    /* box-shadow: 0px 0px 12px -5px black; */
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
     transition: 0.2s ease-in;
 }
-.share:hover{
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
-}
+
 .profileInShare{
     display: flex;
     align-items: center;

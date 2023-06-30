@@ -30,7 +30,7 @@ export default function Header() {
   }
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light Navbar">
+      <nav className="navbar navbar-expand-lg navbar-light Navbar box-shadow">
         <div className="container-fluid">
           <Link className="navbar-brand ms-5 fw-bold " to="/"><span className='text-primary'>FlavourFusion</span></Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +40,7 @@ export default function Header() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-item-center  ">
 
-            <li className="nav-item nav-Item position-relative d-flex align-items-center justify-content-center me-2 searchBarHeader">
+              <li className="nav-item nav-Item position-relative d-flex align-items-center justify-content-center me-2 searchBarHeader">
                 <input
                   type="search"
                   className="form-control rounded"
@@ -51,27 +51,27 @@ export default function Header() {
                 <SearchIcon className='position-absolute end-0 searchIconHeader' />
               </li>
 
-
-              <li className="nav-item nav-icon-Item d-flex align-items-center justify-content-center">
-                <Tooltip title='Chats'>
-                  <a className="nav-Link nav-link position-relative" href="/"><ChatIcon className=" text-primary"/>
-                    <span className="position-absolute bg-danger text-center rounded-circle messageCountOnChatIcon">1</span>
-                  </a>
-                </Tooltip>
-              </li>
-
+              <Link to='/chat'>
+                <li className="nav-item nav-icon-Item d-flex align-items-center justify-content-center">
+                  <Tooltip title='Chats'>
+                    <a className="nav-Link nav-link position-relative" href="/"><ChatIcon className=" text-primary" />
+                      <span className="position-absolute bg-danger text-center rounded-circle messageCountOnChatIcon">1</span>
+                    </a>
+                  </Tooltip>
+                </li>
+              </Link>
               <li className="nav-item nav-icon-Item d-flex align-items-center justify-content-center">
                 <Tooltip title='Notifications'>
-                  <a className="nav-Link nav-link position-relative" href="/"><NotificationsIcon className=" text-primary"/>
+                  <a className="nav-Link nav-link position-relative" href="/"><NotificationsIcon className=" text-primary" />
                     <span className="position-absolute bg-danger text-center rounded-circle notifcationCountOnNotificationIcon">1</span>
                   </a>
                 </Tooltip>
               </li>
 
               <li className="nav-item nav-icon-Item d-flex align-items-center justify-content-center me-lg-4" onClick={LogoutFunction}>
-              <Tooltip title='Logout'>
-               <LogoutIcon className=" text-primary"/>
-               </Tooltip>
+                <Tooltip title='Logout'>
+                  <LogoutIcon className=" text-primary" />
+                </Tooltip>
               </li>
             </ul>
           </div>

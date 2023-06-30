@@ -5,11 +5,8 @@
     background-color: white;
     padding: 20px;
     transition: 0.2s ease-in;
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
 }
-.sideOptionsWrapper:hover{
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
-}
+
 .sideOptionsBox{
     display: flex;
     align-items: center;
@@ -20,4 +17,8 @@
     color: black;
     font-size: 15px;
     cursor: pointer;
+    margin:13px 0px;
+}
+.sideOptionsIcons{
+    margin-right: 13px;
 }
